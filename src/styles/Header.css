@@ -1,0 +1,71 @@
+/* src/components/Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 1rem;
+    color: white;
+    flex-wrap: wrap;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .logo img {
+    font-size: 2rem;
+    width: 100%;
+    height: 25px;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .header-right {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+  
+  .search-bar {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    width: 160px;
+    background-color: #222;
+    color: white;
+  }
+  
+  .dropdown {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+    background-color: #222;
+    color: white;
+  }
+  
+  @media (max-width: 600px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .header-right {
+      width: 100%;
+      justify-content: space-between;
+    }
+  
+    .search-bar,
+    .dropdown {
+      width: 48%;
+    }
+  }
+  
