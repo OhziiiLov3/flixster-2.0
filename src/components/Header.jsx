@@ -2,7 +2,7 @@ import "../styles/Header.css";
 import logo from "../assets/images/play_6994728.png";
 import SearchBar from "./SearchBar";
 
-const Header = ({onSearch}) => {
+const Header = ({onSearch, onClear}) => {
   return (
     <header className="header">
       <div className="header-left">
@@ -10,7 +10,7 @@ const Header = ({onSearch}) => {
         <h1 className="title">Flixor</h1>
       </div>
       <div className="header-right">
-      <SearchBar onSearch={onSearch}/>
+      <SearchBar onSearch={onSearch} onClear={onClear}/>
         <select className="dropdown">
           <option>Sort By</option>
           <option>Popularity</option>

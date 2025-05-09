@@ -36,6 +36,19 @@
   }
   
   
+  .clear-button {
+    padding: 0.5rem;
+    background-color: #444;
+    border: none;
+    color: white;
+    margin-left: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .clear-button:hover {
+    background-color: #e50914;
+  }
   
 
   @media (max-width: 600px) {

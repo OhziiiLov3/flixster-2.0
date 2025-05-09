@@ -54,22 +54,34 @@ const App = () => {
   
   const handleNowPlaying = () => {
     setMode("now_playing");
-    setPage(1);
     setMovies([]);
     setHasMore(true);
+    setMode("now_playing")
+    setPage(1);
   };
 
   useEffect(() => {
-    fetchMovies(page);
-  },[page]);
+    if (mode === "now_playing") {
+      fetchMovies(page);
+    }
+  },[page, mode]);
 
   const loadMoreMovies = () =>{
     setPage((prev => prev + 1));
   };
 
+  const handleClearSearch = () => {
+    setSearchQuery("");
+    setMode("now_playing");
+    setPage(1);
+    setMovies([]);
+    setHasMore(true);
+  };
+  
+
   return (
     <div className="App">
-        <Header onSearch={handleSearch}/>
+        <Header onSearch={handleSearch} onClear={handleClearSearch}/>
         {/* Toogle Now Playing or Search */}
         <div className="header-controls">
         <button onClick={handleNowPlaying} disabled={mode === "now_playing"}>
