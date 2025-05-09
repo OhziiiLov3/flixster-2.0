@@ -29,6 +29,22 @@
     font-size: 0.875rem;
     color: #999;
   }
+
+  .movie-rating, .movie-info p {
+  font-size: 0.9rem;
+  color: #fff;
+  margin: 0.5rem 0;
+}
+.movie-info svg {
+    vertical-align: middle;
+    margin-right: 0.5rem; 
+  }
+  
+  .star-icon {
+    color: #FFD700; 
+    font-size: 1rem; 
+  }
+  
   
   /* Mobile responsiveness */
   @media (max-width: 600px) {
