@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import MovieList from "./components/MovieList";
 import LoadMoreButton from "./components/LoadMoreButton";
 import MovieModal from "./components/MovieModal";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [movies, setMovies] = useState([]);
@@ -174,6 +175,7 @@ const App = () => {
         <MovieModal movie={selectedMovie} onClose={handleCloseModal} />
       )}
       <LoadMoreButton onClick={loadMoreMovies} hasMore={hasMore} />
+      <Footer/>
     </div>
   );
 };

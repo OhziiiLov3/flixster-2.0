@@ -33,32 +33,32 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
 - [ ] **Design Features**
   - [x] Website implements all of the following accessibility features:
     - [x] Semantic HTML
-    - [ ] [Color contrast](https://webaim.org/resources/contrastchecker/)
+    - [x] [Color contrast](https://webaim.org/resources/contrastchecker/)
     - [x] Alt text for images 
   - [x] Website implements responsive web design.
     - [x] Uses CSS Flexbox or CSS Grid
-    - [ ] Movie tiles and images shrink/grow in response to window size
-  - [ ] Users can click on a movie tile to view more details about a movie in a pop-up modal.
-    - [ ] The pop-up window is centered in the screen and does not occupy the entire screen.
-    - [ ] The pop-up window has a shadow to show that it is a pop-up and appears floating on the screen.
-    - [ ] The backdrop of the pop-up appears darker or in a different shade than before. including:
-    - [ ] The pop-up displays additional details about the moving including:
-      - [ ] Runtime in minutes
-      - [ ] Backdrop poster
-      - [ ] Release date
-      - [ ] Genres
-      - [ ] An overview
-  - [ ] Users can use a drop-down menu to sort movies.
-    - [ ] Drop-down allows movies to be sorted by:
-      - [ ] Title (alphabetic, A-Z)
-      - [ ] Release date (chronologically, most recent to oldest)
-      - [ ] Rating (descending, highest to lowest)
-    - [ ] When a sort option is clicked, movies display in a grid according to selected criterion.
-  - [ ] Website displays:
-    - [ ] Header section
+    - [x] Movie tiles and images shrink/grow in response to window size
+  - [x] Users can click on a movie tile to view more details about a movie in a pop-up modal.
+    - [x] The pop-up window is centered in the screen and does not occupy the entire screen.
+    - [x] The pop-up window has a shadow to show that it is a pop-up and appears floating on the screen.
+    - [x] The backdrop of the pop-up appears darker or in a different shade than before. including:
+    - [x] The pop-up displays additional details about the moving including:
+      - [x] Runtime in minutes
+      - [x] Backdrop poster
+      - [x] Release date
+      - [x] Genres
+      - [x] An overview
+  - [x] Users can use a drop-down menu to sort movies.
+    - [x] Drop-down allows movies to be sorted by:
+      - [x] Title (alphabetic, A-Z)
+      - [x] Release date (chronologically, most recent to oldest)
+      - [x] Rating (descending, highest to lowest)
+    - [x] When a sort option is clicked, movies display in a grid according to selected criterion.
+  - [x] Website displays:
+    - [x] Header section
     - [ ] Banner section
-    - [ ] Search bar
-    - [ ] Movie grid
+    - [x] Search bar
+    - [x] Movie grid
     - [ ] About section
     - [ ] Contact section
     - [ ] Footer section
