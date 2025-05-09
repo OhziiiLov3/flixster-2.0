@@ -7,8 +7,8 @@ import "../styles/MovieList.css";
 const MovieList = ({movies}) => {
     return (   
         <div className="movie-list">
-            {movies.map((movie)=>(
-                <MovieCard key={movie.id} movie={movie} />
+            {movies.map((movie, idx)=>(
+                <MovieCard key={idx} movie={movie} />
             ))}
         </div>
      );
