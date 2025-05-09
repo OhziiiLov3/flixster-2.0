@@ -2,11 +2,13 @@
 
 Submitted by: **Keith Baskerville**
 
-Estimated time spent: **#** hours spent in total
+Estimated time spent: **8** hours spent in total
 
-Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
+Deployed Application (optional): [Flixor Deployed Site](https://flixor-two.vercel.app/)
 
 ### Application Features
+![Flixor](https://i.imgur.com/bSlifMQ.png)
+
 
 #### REQUIRED FEATURES
 
@@ -65,7 +67,7 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
 
 #### STRETCH FEATURES
 
-- [ ] **Deployment**
+- [x] **Deployment**
   - [ ] Website is deployed via Render.
 - [x] **Embedded Movie Trailers**
   - [x] Within the pop-up modal displaying a movie's details, the movie trailer is viewable.
