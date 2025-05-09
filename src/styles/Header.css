@@ -71,14 +71,14 @@
   background-color: #b00610;
 }
 
-.dropdown {
+/* .dropdown {
   padding: 0.5rem 0.75rem;
   border-radius: 4px;
   border: none;
   background-color: #222;
   color: white;
   font-size: 0.95rem;
-}
+} */
 
 /* Responsive styling */
 @media (max-width: 600px) {

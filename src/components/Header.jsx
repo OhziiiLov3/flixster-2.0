@@ -1,8 +1,10 @@
 import "../styles/Header.css";
 import logo from "../assets/images/play_6994728.png";
 import SearchBar from "./SearchBar";
+import SortDropdown from "./SortDropdown";
 
-const Header = ({onSearch, onClear}) => {
+const Header = ({onSearch, onClear,onSort}) => {
+
   return (
     <header className="header">
       <div className="header-left">
@@ -11,12 +13,7 @@ const Header = ({onSearch, onClear}) => {
       </div>
       <div className="header-right">
       <SearchBar onSearch={onSearch} onClear={onClear}/>
-        <select className="dropdown">
-          <option>Sort By</option>
-          <option>Popularity</option>
-          <option>Rating</option>
-          <option>Release Date</option>
-        </select>
+       <SortDropdown onSort={onSort}/>
       </div>
     </header>
   );

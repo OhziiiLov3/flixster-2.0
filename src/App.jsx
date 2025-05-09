@@ -27,8 +27,19 @@ const App = () => {
       if (data.results.length === 0 || page >= data.total_pages) {
         setHasMore(false);
       }
-
-      setMovies((prev) => [...prev, ...data.results]);
+      // prevents deduplicates 
+      setMovies((prev) => {
+        const combined = [...prev, ...data.results];
+        const uniqueMovies = [];
+      
+        for (let movie of combined) {
+          if (!uniqueMovies.find((m) => m.id === movie.id)) {
+            uniqueMovies.push(movie);
+          }
+        }
+      
+        return uniqueMovies;
+      });
     } catch (error) {
       console.log("Failed to fetch movies", error);
     }
@@ -58,17 +69,22 @@ const App = () => {
 
   const handleNowPlaying = () => {
     setMode("now_playing");
-    setMovies([]);
-    setHasMore(true);
-    setMode("now_playing");
-    setPage(1);
   };
+
+  useEffect(() => {
+    if (mode === "now_playing") {
+      setMovies([]);
+      setPage(1);
+      setHasMore(true);
+    }
+  }, [mode]);
+  
 
   useEffect(() => {
     if (mode === "now_playing") {
       fetchMovies(page);
     }
-  }, [page, mode]);
+  }, [page]);
 
   const loadMoreMovies = () => {
     setPage((prev) => prev + 1);
@@ -118,6 +134,22 @@ const App = () => {
       console.error("Failed to fetch movie details or trailer", err);
     }
   };
+
+  // sort movies
+  const handleSort = (criteria) => {
+    const sortFunctions = {
+      "title-asc": (a, b) => a.title.localeCompare(b.title),
+      "release-date": (a, b) => new Date(b.release_date) - new Date(a.release_date),
+      "rating-desc": (a, b) => b.vote_average - a.vote_average,
+    };
+  
+    const sortFn = sortFunctions[criteria];
+    if (sortFn) {
+      const sortedMovies = [...movies].sort(sortFn);
+      setMovies(sortedMovies);
+    }
+  };
+  
   
   const handleCloseModal = () => {
     setSelectedMovie(null);
@@ -125,7 +157,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header onSearch={handleSearch} onClear={handleClearSearch} />
+      <Header onSearch={handleSearch} onClear={handleClearSearch} onSort={handleSort}/>
       {/* Toogle Now Playing or Search */}
       <div className="header-controls">
         <button onClick={handleNowPlaying} disabled={mode === "now_playing"}>
