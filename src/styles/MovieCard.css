@@ -4,6 +4,7 @@
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s;
+    cursor: pointer;
   }
   
   .movie-card:hover {
@@ -20,7 +21,7 @@
   }
   
   .movie-title {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 0.5rem 0 0;
   }
   
@@ -32,7 +33,7 @@
   /* Mobile responsiveness */
   @media (max-width: 600px) {
     .movie-title {
-      font-size: 0.9rem;
+      font-size: 1.2rem;
     }
   
     .movie-rating {

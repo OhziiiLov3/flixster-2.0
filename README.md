@@ -25,18 +25,18 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
     - [x] Submit/Search button
     - [x] Clear button
   - [x] Movies with a title containing the search query in the text input field are displayed in a grid view when the user either:
-    - [ ] Presses the Enter key
-    - [ ] Clicks the Submit/Search button
-  - [ ] Users can click the Clear button. When clicked:
-    - [ ] All text in the text input field is deleted
-    - [ ] The most recent search results are cleared from the text input field and the grid view and all current movies are displayed in a grid view
+    - [x] Presses the Enter key
+    - [x] Clicks the Submit/Search button
+  - [x] Users can click the Clear button. When clicked:
+    - [x] All text in the text input field is deleted
+    - [x] The most recent search results are cleared from the text input field and the grid view and all current movies are displayed in a grid view
 - [ ] **Design Features**
-  - [ ] Website implements all of the following accessibility features:
-    - [ ] Semantic HTML
+  - [x] Website implements all of the following accessibility features:
+    - [x] Semantic HTML
     - [ ] [Color contrast](https://webaim.org/resources/contrastchecker/)
-    - [ ] Alt text for images 
-  - [ ] Website implements responsive web design.
-    - [ ] Uses CSS Flexbox or CSS Grid
+    - [x] Alt text for images 
+  - [x] Website implements responsive web design.
+    - [x] Uses CSS Flexbox or CSS Grid
     - [ ] Movie tiles and images shrink/grow in response to window size
   - [ ] Users can click on a movie tile to view more details about a movie in a pop-up modal.
     - [ ] The pop-up window is centered in the screen and does not occupy the entire screen.

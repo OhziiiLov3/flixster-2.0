@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../styles/SearchBar.css";
+import { FiSearch, FiX } from "react-icons/fi";
 
 
 const SearchBar = ({ onSearch, onClear }) => {
@@ -32,10 +33,10 @@ const SearchBar = ({ onSearch, onClear }) => {
         onKeyDown={handleKeyPress}
       />
       <button className="search-button" onClick={handleSearch}>
-        🔍
+      <FiSearch size={18} />
       </button>
       <button className="clear-button" onClick={handleClear}>
-        ✖
+      <FiX size={18} />
       </button>
     </div>
   );
