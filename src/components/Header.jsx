@@ -1,7 +1,8 @@
 import "../styles/Header.css";
 import logo from "../assets/images/play-buttton_14782545.png";
+import SearchBar from "./SearchBar";
 
-const Header = () => {
+const Header = ({onSearch}) => {
   return (
     <header className="header">
       <div className="header-left">
@@ -9,11 +10,7 @@ const Header = () => {
         <h1 className="title">Flixor</h1>
       </div>
       <div className="header-right">
-        <input
-          type="text"
-          className="search-bar"
-          placeholder="Search movies..."
-        />
+      <SearchBar onSearch={onSearch}/>
         <select className="dropdown">
           <option>Sort By</option>
           <option>Popularity</option>

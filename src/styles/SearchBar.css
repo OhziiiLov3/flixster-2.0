@@ -1,0 +1,48 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .search-bar {
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    width: 180px;
+    background-color: #222;
+    color: #fff;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  .search-bar::placeholder {
+    color: #aaa;
+  }
+  
+  .search-button {
+    padding: 0.5rem 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #e50914; /* Netflix red */
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #b00610;
+  }
+  
+  
+  
+
+  @media (max-width: 600px) {
+  
+    .search-bar,
+    .search-button {
+      flex: 1 1 100%;
+    }
+  }
+  
