@@ -39,7 +39,6 @@
   
 
   @media (max-width: 600px) {
-  
     .search-bar,
     .search-button {
       flex: 1 1 100%;

@@ -1,5 +1,5 @@
 import "../styles/Header.css";
-import logo from "../assets/images/play-buttton_14782545.png";
+import logo from "../assets/images/play_6994728.png";
 import SearchBar from "./SearchBar";
 
 const Header = ({onSearch}) => {

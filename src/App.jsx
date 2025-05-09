@@ -76,8 +76,7 @@ const App = () => {
           Now Playing
         </button>
       </div>
-      <h1>{mode === "search" ? `Search Results for "${searchQuery}"` : "Now Playing"}</h1>
-        
+      <h1 className='app-title'>{mode === "search" ? `Search Results for "${searchQuery}"` : "Now Playing"}</h1>
      <MovieList movies={movies}/>
      <LoadMoreButton onClick={loadMoreMovies} hasMore={hasMore}/>
     </div>
