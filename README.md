@@ -56,22 +56,20 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
     - [x] When a sort option is clicked, movies display in a grid according to selected criterion.
   - [x] Website displays:
     - [x] Header section
-    - [ ] Banner section
+    - [x] Banner section
     - [x] Search bar
     - [x] Movie grid
-    - [ ] About section
-    - [ ] Contact section
-    - [ ] Footer section
-    - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS**: To ease the grading process, please use the [color contrast checker](https://webaim.org/resources/contrastchecker/) to demonstrate to the grading team that text and background colors on your website have appropriate contrast. The Contrast Ratio should be above 4.5:1 and should have a green box surrounding it. 
+    - [x] About section
+    - [x] Contact section
+    - [x] Footer section
 
 #### STRETCH FEATURES
 
 - [ ] **Deployment**
   - [ ] Website is deployed via Render.
-  - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS**: For ease of grading, please use the deployed version of your website when creating your walkthrough. 
-- [ ] **Embedded Movie Trailers**
-  - [ ] Within the pop-up modal displaying a movie's details, the movie trailer is viewable.
-    - [ ] When the trailer is clicked, users can play the movie trailer.
+- [x] **Embedded Movie Trailers**
+  - [x] Within the pop-up modal displaying a movie's details, the movie trailer is viewable.
+    - [x] When the trailer is clicked, users can play the movie trailer.
 - [ ] **Favorite Button**
   - [ ] For each movie displayed, users can favorite the movie.
   - [ ] There should be visual element (such as a heart icon) on each movie's tile to show whether or not the movie has been favorited.
